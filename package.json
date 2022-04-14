@@ -1,0 +1,26 @@
+{
+  "name": "paulmiller_react_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js",
+    "client": "npm run start --prefix client",
+    "install-client": "npm install --prefix client",
+    "dev": "concurrently \"nodemon server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Paul Miller",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.1.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "pg": "^8.7.3",
+    "pg-promise": "^10.11.1"
+  }
+}
