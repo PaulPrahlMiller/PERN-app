@@ -5,7 +5,7 @@ A simple fullstack application built using the PERN stack with custom webpack an
 ## Get started
 
 1. Clone the repository
-2. Install client dependencies (from porject root)  
+2. Install client dependencies (from project root)  
    `npm run install-client`
 3. Install server dependencies (from project root)  
    `npm install`
@@ -16,5 +16,5 @@ A simple fullstack application built using the PERN stack with custom webpack an
    - `cd client`
    - `npm run build`
 6. Run the application using the development server.
-   `cd ..` (project root)
-   `npm run dev`
+   - `cd ..` (project root)
+   - `npm run dev`
