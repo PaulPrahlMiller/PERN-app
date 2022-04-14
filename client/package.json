@@ -1,0 +1,38 @@
+{
+  "name": "paulmiller_react_app",
+  "version": "1.0.0",
+  "description": "Custom react toolchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --config ./webpack.config.js --mode development",
+    "build": "webpack --mode production"
+  },
+  "keywords": [
+    "Webpack",
+    "Babel",
+    "Javascript",
+    "React"
+  ],
+  "author": "Paul Miller",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.4",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9",
+    "paulmiller_react_app": "file:..",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
