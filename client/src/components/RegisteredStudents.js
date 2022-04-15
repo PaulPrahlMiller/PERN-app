@@ -9,10 +9,7 @@ const RegisteredStudents = () => {
   const [registered, setRegistered] = useState([]);
   const [orderedBy, setOrderedBy] = useState("unix_timestamp");
   const [sortedBy, setSortedBy] = useState("DESC");
-  const [alert, setAlert] = useState({
-    type: null,
-    msg: "",
-  });
+  const [alert, setAlert] = useState(null);
 
   useEffect(() => {
     fetchData();
@@ -28,11 +25,10 @@ const RegisteredStudents = () => {
 
   const handleClick = (e) => {
     if (e.target.tagName === "TH") {
-      const value = e.target.id;
-      if (orderedBy === value) {
+      if (orderedBy === e.target.id) {
         setSortedBy((current) => (current === "ASC" ? "DESC" : "ASC"));
       } else {
-        setOrderedBy(value);
+        setOrderedBy(e.target.id);
         setSortedBy("ASC");
       }
     }
